@@ -1,0 +1,26 @@
+// *************************************
+//
+//   helper classes
+//
+//
+// *************************************
+
+.blur
+  +filter(blur($blur))
+
+.trans-1s
+  +transition(all, 1s)
+.trans-05s
+  +transition(all, 0.5s)
+
+.h100p
+  height: 80%
+
+.box-shadow
+  +box-shadow(rgba(black, 0.6) 0 0 15px)
+
+.off-canvas
+  margin-right: -$w-mobile
+
+.hidden
+  display: none
