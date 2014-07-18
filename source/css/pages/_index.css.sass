@@ -4,3 +4,32 @@
 //
 //
 // *************************************
+html
+  @extend %h100p
+
+body
+  @extend %h100p
+  background-color: $cvt-white
+
+.main
+  @extend %h100p
+  padding: 0 2em
+
+.content
+  @extend %h100p
+  background: #ccc url(http://placehold.it/2560x1440) center center no-repeat
+  +background-size(cover)
+
+
+header, footer
+  background-color: $cvt-white
+  width: 100%
+  position: fixed
+  height: 2em
+
+header
+  top: 0
+
+footer
+  bottom: 0
+
