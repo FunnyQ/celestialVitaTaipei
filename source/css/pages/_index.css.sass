@@ -17,8 +17,10 @@ body
 
 .content
   @extend %h100p
-  background: #ccc url(http://placehold.it/2560x1440) center center no-repeat
+  background: #ccc url(#{$img-bg}/index01.jpg) center center no-repeat
   +background-size(cover)
+  overflow: scroll
+  padding: 2em 0
 
 
 header, footer
