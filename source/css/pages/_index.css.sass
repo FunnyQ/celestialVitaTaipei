@@ -13,25 +13,42 @@ body
 
 .main
   @extend %h100p
-  padding: 0 2em
+  padding: 0 $wborder-width
 
 .content
   @extend %h100p
   background: #ccc url(#{$img-bg}/index01.jpg) center center no-repeat
   +background-size(cover)
   overflow: scroll
-  padding: 2em 0
+  padding: $wborder-width 0
+  +breakpoint($b-mobile)
+    padding: $wborder-width*2 0
 
 
 header, footer
   background-color: $cvt-white
   width: 100%
   position: fixed
-  height: 2em
+  height: $wborder-width
+  +breakpoint($b-mobile)
+    height: $wborder-width*2
 
 header
   top: 0
+  font-size: 0.7em
+  padding: 0.2em 1.5em
+  .i18n
+    padding: 0.2em 0 0 0.2em
+  a
+    @extend .trans-05s
+    color: $cvt-grey
+    &:hover
+      color: darken($cvt-grey, 25%)
+      text-decoration: none
+
+
 
 footer
   bottom: 0
+
 
