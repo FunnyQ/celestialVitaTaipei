@@ -21,6 +21,7 @@ body
   +background-size(cover)
   overflow: scroll
   padding: $wborder-width 0
+
   +breakpoint($b-mobile)
     padding: $wborder-width*2 0
 
@@ -30,16 +31,19 @@ header, footer
   width: 100%
   position: fixed
   height: $wborder-width
+
   +breakpoint($b-mobile)
     height: $wborder-width*2
 
 header
   top: 0
-  padding: 0.35em $wborder-width
+  padding: 0.65em $wborder-width
+
   .i18n
-    padding: 0.2em 0 0 0.2em
+    padding: 0.25em 0 0 0.2em
+
   a
-    font-size: 0.7em
+    font-size: $fz-xs
     @extend .trans-05s
     color: $cvt-grey
     &:hover
@@ -50,5 +54,11 @@ header
 
 footer
   bottom: 0
+  color: $cvt-grey
+  padding: 0 $wborder-width
+  +breakpoint($b-mobile)
+    padding: 0.65em $wborder-width
 
+  p
+    font-size: $fz-xs
 
