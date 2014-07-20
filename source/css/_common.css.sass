@@ -58,6 +58,28 @@ header
       li:first-child
         margin-left: 28em
 
+  .pages-logo
+    float: left
+    width: 140px
+    margin-top: -0.5em
+    @extend %hidden-mobile
+
+.main
+  overflow: scroll
+  @extend %h100p
+  // padding: 0 $wborder-width
+
+.border-left
+  @extend %border-side
+  position: fixed
+  left: 0
+  z-index: index($elements, "border-left")
+
+.border-right
+  position: fixed
+  @extend %border-side
+  right: 0
+  z-index: index($elements, "border-right")
 
 
 footer
@@ -70,3 +92,11 @@ footer
 
   p
     font-size: $fz-xs
+
+.overlay
+  position: absolute
+  top: 0
+  width: 100%
+  height: 100%
+  background-color: rgba(black, 0.35)
+  z-index: index($elements, overlay)
