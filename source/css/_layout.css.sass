@@ -17,8 +17,15 @@
 %span12
   +span(12)
 
+// margin 0 auto centering
 %mcenter
   margin: 0 auto
+
+// hidden mobile
+%hidden-mobile
+  display: none
+  +breakpoint($b-mobile)
+    display: block
 
 // index
 

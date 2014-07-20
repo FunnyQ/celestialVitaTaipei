@@ -1,0 +1,30 @@
+.about
+
+  .title
+    +span(isolate 10 at 2)
+    position: relative
+    margin-top: 30px
+    text-align: center
+    z-index: index($elements, title)
+    +breakpoint($b-mobile)
+      margin-top: 100px
+
+    h2
+      font-size: $fz-xl
+      +breakpoint($b-mobile)
+        font-size: $fz-fl
+
+  .pages-logo
+    float: left
+    width: 140px
+    margin-top: -0.5em
+    @extend %hidden-mobile
+
+
+  header
+    +breakpoint($b-mobile)
+      height: $wborder-width*3
+    .links
+      margin-top: 0.5em
+
+

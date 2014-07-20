@@ -1,0 +1,72 @@
+html
+  @extend %h100p
+
+
+body
+  @extend %h100p
+  background-color: $cvt-white
+
+
+header, footer
+  background-color: $cvt-white
+  width: 100%
+  position: fixed
+  height: $wborder-width
+
+  +breakpoint($b-mobile)
+    height: $wborder-width*2
+
+header
+  top: 0
+  padding: 0.65em $wborder-width
+  z-index: index($elements, header)
+
+  .links
+    @extend %hidden-mobile
+
+  .i18n
+    padding: 0.25em 0 0 0.2em
+
+  a
+    font-size: $fz-xs
+    @extend .trans-05s
+    color: $cvt-grey
+    &:hover
+      color: darken($cvt-grey, 25%)
+      text-decoration: none
+
+  .breadcrumbs
+    @extend %hidden-mobile
+    color: $cvt-grey
+    font-size: $fz-m
+
+    ul
+      list-style: none
+
+    li
+      float: left
+      margin-right: 1em
+      margin-top: -0.4em
+      &:first-child
+        margin-left: 2.5em
+
+    +breakpoint($b-desktop)
+      font-size: $fz-l
+      li:first-child
+        margin-left: 12em
+    +breakpoint($b-xlarge)
+      li:first-child
+        margin-left: 28em
+
+
+
+footer
+  bottom: 0
+  color: lighten($cvt-grey, 20%)
+  padding: 0 $wborder-width
+  z-index: index($elements, footer)
+  +breakpoint($b-mobile)
+    padding: 0.65em $wborder-width
+
+  p
+    font-size: $fz-xs
