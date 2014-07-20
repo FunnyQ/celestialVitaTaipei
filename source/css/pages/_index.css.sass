@@ -44,6 +44,7 @@ footer
   bottom: 0
   color: lighten($cvt-grey, 20%)
   padding: 0 $wborder-width
+  z-index: index($elements, footer)
   +breakpoint($b-mobile)
     padding: 0.65em $wborder-width
 
@@ -51,24 +52,25 @@ footer
     font-size: $fz-xs
 
 
-.main
-  @extend %h100p
-  padding: 0 $wborder-width
-
-
-.content
-  @extend %h100p
-  position: relative
-  background: #ccc url(#{$img-bg}/index01.jpg) center center no-repeat
-  +background-size(cover)
-  overflow: scroll
-  padding: $wborder-width 0
-
-  +breakpoint($b-mobile)
-    padding: $wborder-width*2 0
-
-
 .index
+
+  .main
+    @extend %h100p
+    // padding: 0 $wborder-width
+
+  .border-left
+    @extend %border-side
+    position: relative
+    float: left
+    z-index: index($elements, "border-left")
+
+  .border-right
+    position: relative
+    @extend %border-side
+    float: right
+    z-index: index($elements, "border-right")
+
+
   .logo
     +span(isolate 10 at 2)
     position: relative
@@ -101,3 +103,4 @@ footer
     width: 100%
     height: 100%
     background-color: rgba(black, 0.5)
+    z-index: index($elements, overlay)

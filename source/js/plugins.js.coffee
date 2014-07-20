@@ -16,5 +16,7 @@
 ##   jQuery / helper plugins
 ## -------------------------------------
 #= require "bootstrap-sprockets"
-#
+#= require "vendor/_jquery.easing.js"
+#= require "vendor/_jquery.cycle.all.js"
+#= require "vendor/_jquery.maximage.js"
 #
