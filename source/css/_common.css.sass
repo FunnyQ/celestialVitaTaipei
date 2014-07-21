@@ -20,6 +20,7 @@ header
   top: 0
   padding: 0.65em $wborder-width
   z-index: index($elements, header)
+  height: $wborder-width*2
 
   .links
     @extend %hidden-mobile
@@ -56,13 +57,26 @@ header
         margin-left: 12em
     +breakpoint($b-xlarge)
       li:first-child
-        margin-left: 28em
+        margin-left: 25em
 
   .pages-logo
     float: left
     width: 140px
     margin-top: -0.5em
     @extend %hidden-mobile
+
+.menu-btn
+  a
+    position: relative
+    display: block
+    background-color: #FFF
+    z-index: index($elements, menu-btn)
+  @extend %show-mobile
+
+nav.pushy-open
+  ul
+    list-style: none
+    padding-left: 0
 
 .main
   overflow: scroll

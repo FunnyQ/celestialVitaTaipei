@@ -19,4 +19,6 @@
 #= require "vendor/_jquery.easing.js"
 #= require "vendor/_jquery.cycle.all.js"
 #= require "vendor/_jquery.maximage.js"
+#= require "vendor/_pushy.js"
+#= require "vendor/_tinymap.js"
 #

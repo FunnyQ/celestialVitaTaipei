@@ -16,3 +16,16 @@ $("#bgslide").maximage
   #   jQuery("#cycle-loader").hide()
   #   jQuery("#maximage").fadeIn "fast"
   #   return
+
+###
+# tinyMap
+###
+$("#map").tinyMap
+  center: "台灣台北市文山區萬壽路64號"
+  zoom: 15
+  disableDefaultUI: true
+  control: false
+  marker: [
+    addr: "台灣台北市文山區萬壽路64號"
+    label: 'Celestial Vita Taipei'
+]

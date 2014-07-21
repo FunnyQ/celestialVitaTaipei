@@ -53,12 +53,12 @@
 
   .menu-item
     list-style: none
-    +span(12)
+    @extend %span12
     +breakpoint($b-xlarge)
       +span(isolate 10 at 2)
 
     li
-      +span(12)
+      @extend %span12
       display: block
       text-align: center
       width: 100%
@@ -87,3 +87,12 @@
           text-decoration: none
           background-color: rgba(#fff, 0.5)
           +text-shadow(#000 0 2px 0)
+
+  .content
+    @extend %span12
+    padding: 1em
+    margin: 2em 0 3em 0
+    background-color: rgba(#000, 0.5)
+    line-height: 1.8
+    +breakpoint($b-desktop)
+      +span(isolate 10 at 2)

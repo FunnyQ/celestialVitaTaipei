@@ -38,12 +38,46 @@
     +breakpoint($b-xlarge)
       margin-top: 440px
   .sub-title
-    +span(12)
+    @extend %span12
     text-align: center
     font-size: $fz-s
     font-family: $ff-georgia
     +breakpoint($b-mobile)
       font-size: $fz-l
+  .arrow
+    @extend %span12
+    margin-top: 150px
+    text-align: center
+    @extend %hidden-mobile
+    a
+      color: #fff
+      &:hover
+        color: darken(#fff, 10%)
+  .content
+    h4
+      font-size: $fz-l
+      padding-bottom: 2em
+  .gallery
+    @extend %span12
+    img
+      +gallery(6)
+      margin-bottom: 0.5em
+      +breakpoint($b-mobile)
+        +gallery(3)
+        margin-bottom: 1em
+  .map-view
+    @extend %span12
+    height: 250px
+    background-color: #FFF
+
+  #activities
+    +breakpoint($b-mobile)
+      ul
+        +span(7)
+        padding-left: 3em
+      img
+        +span(5)
+
 
 
   .menu-item

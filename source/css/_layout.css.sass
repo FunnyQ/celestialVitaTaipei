@@ -27,6 +27,12 @@
   +breakpoint($b-mobile)
     display: block
 
+// only show in mobile
+%show-mobile
+  display: block
+  +breakpoint($b-mobile)
+    display: none
+
 // index
 
 %border-side
