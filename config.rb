@@ -5,7 +5,7 @@
 # Change Compass configuration
 # using :nested for develop & :compressed for production <==========
 compass_config do |config|
-  config.output_style = :nested
+  config.output_style = :compressed
   config.line_comments = false
 end
 
@@ -80,6 +80,8 @@ configure :build do
 
   # Use relative URLs
   activate :relative_assets
+
+  # activate :directory_indexes
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"

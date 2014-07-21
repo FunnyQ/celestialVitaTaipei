@@ -92,7 +92,13 @@
     @extend %span12
     padding: 1em
     margin: 2em 0 3em 0
-    background-color: rgba(#000, 0.5)
+    background-color: rgba(#000, 0.3)
     line-height: 1.8
     +breakpoint($b-desktop)
       +span(isolate 10 at 2)
+
+    .copy
+      text-align: left
+      +breakpoint($b-mobile)
+        text-align: center
+        font-size: $fz-l

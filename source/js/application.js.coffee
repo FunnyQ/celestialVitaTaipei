@@ -29,3 +29,11 @@ $("#map").tinyMap
     addr: "台北市文山區政大二街51號"
     label: 'Celestial Vita Taipei'
 ]
+
+
+###
+# lightbox
+###
+$(".gallery a").fancybox
+  helpers:
+    title: 'outside'

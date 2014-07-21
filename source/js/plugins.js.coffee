@@ -21,4 +21,5 @@
 #= require "vendor/_jquery.maximage.js"
 #= require "vendor/_pushy.js"
 #= require "vendor/_tinymap.js"
+#= require "vendor/_fancybox.js"
 #
