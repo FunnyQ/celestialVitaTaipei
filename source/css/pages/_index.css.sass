@@ -10,24 +10,24 @@
   .logo
     +span(isolate 10 at 2)
     position: relative
-    padding: 20px
-    margin-top: 30px
+    padding: 0 20px
+    margin-top: 50px
     z-index: index($elements, logo)
     +breakpoint($b-mobile)
       +span(isolate 10 at 2)
-      margin-top: 60px
-      padding: 100px
+      margin-top: 160px
+      padding: 0 100px
     +breakpoint($b-pad)
       +span(isolate 6 at 4)
-      margin-top: 50px
+      margin-top: 150px
     +breakpoint($b-desktop)
       +span(isolate 4 at 5)
-      margin-top: 120px
-      padding: 50px
+      margin-top: 170px
+      padding: 0 50px
     +breakpoint($b-xlarge)
       +span(isolate 4 at 5)
-      margin-top: 120px
-      padding: 120px
+      margin-top: 260px
+      padding: 0 120px
 
     img
       @extend %mcenter

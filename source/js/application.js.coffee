@@ -21,11 +21,11 @@ $("#bgslide").maximage
 # tinyMap
 ###
 $("#map").tinyMap
-  center: "台灣台北市文山區萬壽路64號"
+  center: "台北市文山區政大二街51號"
   zoom: 15
   disableDefaultUI: true
   control: false
   marker: [
-    addr: "台灣台北市文山區萬壽路64號"
+    addr: "台北市文山區政大二街51號"
     label: 'Celestial Vita Taipei'
 ]
