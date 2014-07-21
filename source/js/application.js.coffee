@@ -37,3 +37,7 @@ $("#map").tinyMap
 $(".gallery a").fancybox
   helpers:
     title: 'outside'
+
+$(".open-photo").fancybox
+  helpers:
+    title: 'outside'
