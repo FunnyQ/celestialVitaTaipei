@@ -65,9 +65,9 @@
     padding: $wborder-width/2 $wborder-width*1.5 $wborder-width*2.5 $wborder-width*1.5
     height: 50%
   +breakpoint($b-pad)
-    height: 40%
+    height: 45%
   +breakpoint($b-xlarge)
-    height: 30%
+    height: 25%
 
   .info-wraper
     width: 100%
@@ -116,11 +116,35 @@
       font-size: $fz-s
       display: inline-block
       +span(12)
-      margin-top: 0.5em
+      margin-top: 0.3em
       +breakpoint($b-desktop)
         +gallery(6)
       +breakpoint($b-xlarge)
         +gallery(4)
+
   .info-navi
     @extend %span12
+    border-top: 2px double rgba(#fff, 0.3)
+    +breakpoint($b-mobile)
+      padding-top: 0.5em
+    +breakpoint($b-pad)
+      padding-top: 1em
+    +breakpoint($b-desktop)
+      padding-top: 1.5em
+    +breakpoint($b-xlarge)
+      padding-top: 3.5em
+      +span(2)
+    .back, .nextlevel
+      +span(12)
+      padding: 0.2em
+      text-align: center
+      +breakpoint($b-mobile)
+        +span(3)
+        float: right
+      +breakpoint($b-xlarge)
+        +span(12)
+    a
+      @extend %navi-button
+      +breakpoint($b-mobile)
+        height: 38px
 
