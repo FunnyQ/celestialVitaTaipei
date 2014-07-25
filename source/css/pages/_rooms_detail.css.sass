@@ -1,21 +1,56 @@
 .rooms_standard, .rooms_superior, .rooms_delux
   .title
     +span(isolate 10 at 2)
-    margin-top: 30px
+    margin-top: 20px
     +breakpoint($b-mobile)
-      margin-top: 80px
+      margin-top: 100px
     +breakpoint($b-desktop)
-      margin-top: 60px
-    +breakpoint($b-xlarge)
       margin-top: 80px
+    +breakpoint($b-xlarge)
+      margin-top: 120px
   .menu
-    margin-top: 90px
+    margin-top: 80px
     +breakpoint($b-mobile)
-      margin-top: 175px
+      margin-top: 195px
     +breakpoint($b-desktop)
-      margin-top: 150px
-    +breakpoint($b-xlarge)
       margin-top: 170px
+    +breakpoint($b-xlarge)
+      margin-top: 210px
+
+%room-gallery
+  +span(12)
+  .pic
+    margin-bottom: 0.5em
+  img
+    border: 2px solid #fff
+
+  +breakpoint($b-mobile)
+    margin-top: 1em
+    +span(10)
+    +push(1)
+  +breakpoint($b-pad)
+    +span(8)
+    +push(2)
+
+.rooms_standard
+  .room-gallery
+    @extend %room-gallery
+    +span(3)
+    +push(4.5)
+    .pic
+      +span(12)
+.rooms_superior
+  .room-gallery
+    @extend %room-gallery
+    .pic
+      +span(3)
+.rooms_delux
+  .room-gallery
+    @extend %room-gallery
+    +span(8)
+    +push(2)
+    .pic
+      +span(4)
 
 
 .room-info
