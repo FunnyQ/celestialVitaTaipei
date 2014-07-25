@@ -5,7 +5,7 @@
 # Change Compass configuration
 # using :nested for develop & :compressed for production <==========
 compass_config do |config|
-  config.output_style = :compressed
+  config.output_style = :nested
   config.line_comments = false
 end
 
@@ -56,6 +56,7 @@ set :fonts_dir,  "fonts"
 # Reload the browser automatically whenever files change
 configure :development do
   activate :livereload
+  # set :debug_asset, true
 end
 
 # Methods defined in the helpers block are available in templates
