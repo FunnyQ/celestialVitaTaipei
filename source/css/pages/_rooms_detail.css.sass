@@ -96,6 +96,10 @@
       padding: 0
       color: #d7d1b3
       font-size: $fz-xs
+    .extrainfo
+      font-size: $fz-xs
+      color: lighten($cvt-infoWraperBg, 50%)
+      margin-bottom: 0
     .cost
       color: #f0c0c0
       font-size: $fz-xs
@@ -114,6 +118,7 @@
     .facilities-list
     li
       font-size: $fz-s
+      color: lighten($cvt-infoWraperBg, 60%)
       display: inline-block
       +span(12)
       margin-top: 0.3em
@@ -124,7 +129,7 @@
 
   .info-navi
     @extend %span12
-    border-top: 2px double rgba(#fff, 0.3)
+    border-top: 2px double lighten($cvt-infoWraperBg, 10%)
     +breakpoint($b-mobile)
       padding-top: 0.5em
     +breakpoint($b-pad)
