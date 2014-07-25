@@ -7,6 +7,12 @@
 
 .about, .rooms, .diningarea, .facilities
 
+  .menu-item
+    li
+      +breakpoint($b-mobile)
+        +span(4)
+
+
   header
     +breakpoint($b-mobile)
       height: $wborder-width*3
@@ -68,6 +74,7 @@
         margin-bottom: 1em
     img
       border: 5px solid #fff
+
   .map-wraper
     +breakpoint($b-mobile)
       padding: 0 2em
@@ -83,9 +90,4 @@
         padding-left: 3em
       img
         +span(5)
-
-
-  .menu-item
-    li
-      +breakpoint($b-mobile)
-        +span(4)
+        padding: 0 1em
