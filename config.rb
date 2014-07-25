@@ -56,7 +56,7 @@ set :fonts_dir,  "fonts"
 # Reload the browser automatically whenever files change
 configure :development do
   activate :livereload
-  # set :debug_asset, true
+  set :debug_asset, true
 end
 
 # Methods defined in the helpers block are available in templates

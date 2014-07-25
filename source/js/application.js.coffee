@@ -41,3 +41,6 @@ $(".gallery a").fancybox
 $(".open-photo").fancybox
   helpers:
     title: 'outside'
+
+
+$('.carousel').carousel()

@@ -1,0 +1,91 @@
+.rooms_standard, .rooms_superior, .rooms_delux
+  .title
+    +span(isolate 10 at 2)
+    margin-top: 30px
+    +breakpoint($b-mobile)
+      margin-top: 80px
+    +breakpoint($b-desktop)
+      margin-top: 60px
+    +breakpoint($b-xlarge)
+      margin-top: 80px
+  .menu
+    margin-top: 90px
+    +breakpoint($b-mobile)
+      margin-top: 175px
+    +breakpoint($b-desktop)
+      margin-top: 150px
+    +breakpoint($b-xlarge)
+      margin-top: 170px
+
+
+.room-info
+  position: absolute
+  bottom: 0
+  width: 100%
+  height: 60%
+  background-color: $cvt-roomsDetailBg
+  z-index: index($elements, room_info)
+  padding: $wborder-width/2 $wborder-width*1.5 $wborder-width*1.5 $wborder-width*1.5
+  +breakpoint($b-mobile)
+    padding: $wborder-width/2 $wborder-width*1.5 $wborder-width*2.5 $wborder-width*1.5
+    height: 50%
+  +breakpoint($b-pad)
+    height: 40%
+  +breakpoint($b-xlarge)
+    height: 30%
+
+  .info-wraper
+    width: 100%
+    height: 100%
+    background-color: $cvt-infoWraperBg
+    overflow: scroll
+
+  .info-intro
+    padding: 0.5em
+    @extend %span12
+    .spec
+      border-bottom: 1px solid #fff
+      margin-bottom: 0.5em
+      h4
+        font-size: $fz-s
+        padding-bottom: 0.1em
+        +breakpoint($b-mobile)
+          font-size: $fz-m
+          padding: 0 0.5em
+    p
+      font-size: $fz-s
+      padding: 0 1em
+    .zh
+      font-size: $fz-s
+    .bed
+      padding: 0
+      color: #d7d1b3
+      font-size: $fz-xs
+    .cost
+      color: #f0c0c0
+      font-size: $fz-xs
+      text-align: right
+      margin-top: 0.4em
+      +breakpoint($b-mobile)
+        margin-top: 0.4em
+
+    +breakpoint($b-mobile)
+      +span(6)
+    +breakpoint($b-xlarge)
+      +span(5)
+
+  .info-facilities
+    @extend .info-intro
+    .facilities-list
+    li
+      font-size: $fz-s
+      display: inline-block
+      +span(12)
+      margin-top: 0.5em
+      +breakpoint($b-desktop)
+        +gallery(6)
+      +breakpoint($b-xlarge)
+        +gallery(4)
+  .info-navi
+    @extend %span12
+
