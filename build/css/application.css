@@ -705,172 +705,6 @@ pre {
   max-height: 340px;
   overflow-y: scroll; }
 
-.carousel {
-  position: relative; }
-
-.carousel-inner {
-  position: relative;
-  overflow: hidden;
-  width: 100%; }
-  .carousel-inner > .item {
-    display: none;
-    position: relative;
-    -webkit-transition: 0.6s ease-in-out left;
-    -o-transition: 0.6s ease-in-out left;
-    transition: 0.6s ease-in-out left; }
-    .carousel-inner > .item > img,
-    .carousel-inner > .item > a > img {
-      display: block;
-      width: 100% \9;
-      max-width: 100%;
-      height: auto;
-      line-height: 1; }
-  .carousel-inner > .active,
-  .carousel-inner > .next,
-  .carousel-inner > .prev {
-    display: block; }
-  .carousel-inner > .active {
-    left: 0; }
-  .carousel-inner > .next,
-  .carousel-inner > .prev {
-    position: absolute;
-    top: 0;
-    width: 100%; }
-  .carousel-inner > .next {
-    left: 100%; }
-  .carousel-inner > .prev {
-    left: -100%; }
-  .carousel-inner > .next.left,
-  .carousel-inner > .prev.right {
-    left: 0; }
-  .carousel-inner > .active.left {
-    left: -100%; }
-  .carousel-inner > .active.right {
-    left: 100%; }
-
-.carousel-control {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 15%;
-  opacity: 0.5;
-  filter: alpha(opacity=50);
-  font-size: 20px;
-  color: white;
-  text-align: center;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
-  .carousel-control.left {
-    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
-    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
-    background-repeat: repeat-x;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1); }
-  .carousel-control.right {
-    left: auto;
-    right: 0;
-    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
-    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
-    background-repeat: repeat-x;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1); }
-  .carousel-control:hover, .carousel-control:focus {
-    outline: 0;
-    color: white;
-    text-decoration: none;
-    opacity: 0.9;
-    filter: alpha(opacity=90); }
-  .carousel-control .icon-prev,
-  .carousel-control .icon-next,
-  .carousel-control .glyphicon-chevron-left,
-  .carousel-control .glyphicon-chevron-right {
-    position: absolute;
-    top: 50%;
-    z-index: 5;
-    display: inline-block; }
-  .carousel-control .icon-prev,
-  .carousel-control .glyphicon-chevron-left {
-    left: 50%;
-    margin-left: -10px; }
-  .carousel-control .icon-next,
-  .carousel-control .glyphicon-chevron-right {
-    right: 50%;
-    margin-right: -10px; }
-  .carousel-control .icon-prev,
-  .carousel-control .icon-next {
-    width: 20px;
-    height: 20px;
-    margin-top: -10px;
-    font-family: serif; }
-  .carousel-control .icon-prev:before {
-    content: '\2039'; }
-  .carousel-control .icon-next:before {
-    content: '\203a'; }
-
-.carousel-indicators {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  z-index: 15;
-  width: 60%;
-  margin-left: -30%;
-  padding-left: 0;
-  list-style: none;
-  text-align: center; }
-  .carousel-indicators li {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    margin: 1px;
-    text-indent: -999px;
-    border: 1px solid white;
-    border-radius: 10px;
-    cursor: pointer;
-    background-color: #000 \9;
-    background-color: transparent; }
-  .carousel-indicators .active {
-    margin: 0;
-    width: 12px;
-    height: 12px;
-    background-color: white; }
-
-.carousel-caption {
-  position: absolute;
-  left: 15%;
-  right: 15%;
-  bottom: 20px;
-  z-index: 10;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  color: white;
-  text-align: center;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
-  .carousel-caption .btn {
-    text-shadow: none; }
-
-@media screen and (min-width: 768px) {
-  .carousel-control .glyphicon-chevron-left,
-  .carousel-control .glyphicon-chevron-right,
-  .carousel-control .icon-prev,
-  .carousel-control .icon-next {
-    width: 30px;
-    height: 30px;
-    margin-top: -15px;
-    font-size: 30px; }
-  .carousel-control .glyphicon-chevron-left,
-  .carousel-control .icon-prev {
-    margin-left: -15px; }
-  .carousel-control .glyphicon-chevron-right,
-  .carousel-control .icon-next {
-    margin-right: -15px; }
-
-  .carousel-caption {
-    left: 20%;
-    right: 20%;
-    padding-bottom: 30px; }
-
-  .carousel-indicators {
-    bottom: 20px; } }
 /*!
  *  Font Awesome 4.1.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -2548,7 +2382,7 @@ div.mc-image {
   right: 0;
   bottom: 0;
   left: 200px;
-  z-index: 11; }
+  z-index: 12; }
 
 /* Example Media Query */
 @media screen and (max-width: 768px) {
@@ -2800,19 +2634,19 @@ html, body, .main {
 .qrow {
   clear: both; }
 
-.index .menu-item, .about .menu-item, .rooms .menu-item, .diningarea .menu-item, .facilities .menu-item, .rooms_standard .menu-item, .index .menu-item li, .about .menu-item li, .rooms .menu-item li, .diningarea .menu-item li, .facilities .menu-item li, .rooms_standard .menu-item li, .index .content, .about .content, .rooms .content, .diningarea .content, .facilities .content, .rooms_standard .content, .about .sub-title, .rooms .sub-title, .diningarea .sub-title, .facilities .sub-title, .rooms_standard .sub-title, .about .arrow, .rooms .arrow, .diningarea .arrow, .facilities .arrow, .rooms_standard .arrow, .about .gallery, .rooms .gallery, .diningarea .gallery, .facilities .gallery, .rooms_standard .gallery, .about .map-view, .rooms .map-view, .diningarea .map-view, .facilities .map-view, .rooms_standard .map-view {
+.index .menu-item, .about .menu-item, .rooms .menu-item, .diningarea .menu-item, .facilities .menu-item, .rooms_standard .menu-item, .rooms_superior .menu-item, .rooms_delux .menu-item, .index .menu-item li, .about .menu-item li, .rooms .menu-item li, .diningarea .menu-item li, .facilities .menu-item li, .rooms_standard .menu-item li, .rooms_superior .menu-item li, .rooms_delux .menu-item li, .index .content, .about .content, .rooms .content, .diningarea .content, .facilities .content, .rooms_standard .content, .rooms_superior .content, .rooms_delux .content, .about .sub-title, .rooms .sub-title, .diningarea .sub-title, .facilities .sub-title, .rooms_standard .sub-title, .rooms_superior .sub-title, .rooms_delux .sub-title, .about .arrow, .rooms .arrow, .diningarea .arrow, .facilities .arrow, .rooms_standard .arrow, .rooms_superior .arrow, .rooms_delux .arrow, .about .gallery, .rooms .gallery, .diningarea .gallery, .facilities .gallery, .rooms_standard .gallery, .rooms_superior .gallery, .rooms_delux .gallery, .about .map-view, .rooms .map-view, .diningarea .map-view, .facilities .map-view, .rooms_standard .map-view, .rooms_superior .map-view, .rooms_delux .map-view, .room-info .info-intro, .room-info .info-facilities, .room-info .info-navi {
   width: 100%;
   float: left;
   padding-left: 0.83333%;
   padding-right: 0.83333%; }
 
-.index .logo img, .about .logo img, .rooms .logo img, .diningarea .logo img, .facilities .logo img, .rooms_standard .logo img, .index .menu img, .about .menu img, .rooms .menu img, .diningarea .menu img, .facilities .menu img, .rooms_standard .menu img {
+.index .logo img, .about .logo img, .rooms .logo img, .diningarea .logo img, .facilities .logo img, .rooms_standard .logo img, .rooms_superior .logo img, .rooms_delux .logo img, .index .menu img, .about .menu img, .rooms .menu img, .diningarea .menu img, .facilities .menu img, .rooms_standard .menu img, .rooms_superior .menu img, .rooms_delux .menu img {
   margin: 0 auto; }
 
-header .links, header .breadcrumbs, header .pages-logo, .about .arrow, .rooms .arrow, .diningarea .arrow, .facilities .arrow, .rooms_standard .arrow {
+header .links, header .breadcrumbs, header .pages-logo, .about .arrow, .rooms .arrow, .diningarea .arrow, .facilities .arrow, .rooms_standard .arrow, .rooms_superior .arrow, .rooms_delux .arrow {
   display: none; }
   @media (min-width: 480px) {
-    header .links, header .breadcrumbs, header .pages-logo, .about .arrow, .rooms .arrow, .diningarea .arrow, .facilities .arrow, .rooms_standard .arrow {
+    header .links, header .breadcrumbs, header .pages-logo, .about .arrow, .rooms .arrow, .diningarea .arrow, .facilities .arrow, .rooms_standard .arrow, .rooms_superior .arrow, .rooms_delux .arrow {
       display: block; } }
 
 .menu-btn {
@@ -2825,6 +2659,19 @@ header .links, header .breadcrumbs, header .pages-logo, .about .arrow, .rooms .a
   height: 100%;
   width: 1.2em;
   background-color: white; }
+
+.index .menu-item li a, .about .menu-item li a, .rooms .menu-item li a, .diningarea .menu-item li a, .facilities .menu-item li a, .rooms_standard .menu-item li a, .rooms_superior .menu-item li a, .rooms_delux .menu-item li a, .room-info .info-navi a {
+  display: block;
+  padding: 0.5em 0;
+  color: white;
+  width: 100%;
+  height: 44px;
+  border: 1px solid white;
+  background: rgba(0, 0, 0, 0.2); }
+  .index .menu-item li a:hover, .about .menu-item li a:hover, .rooms .menu-item li a:hover, .diningarea .menu-item li a:hover, .facilities .menu-item li a:hover, .rooms_standard .menu-item li a:hover, .rooms_superior .menu-item li a:hover, .rooms_delux .menu-item li a:hover, .room-info .info-navi a:hover {
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-shadow: black 0 2px 0; }
 
 body {
   background-color: white; }
@@ -2841,7 +2688,7 @@ header, footer {
 header {
   top: 0;
   padding: 0.65em 1.2em;
-  z-index: 5;
+  z-index: 6;
   height: 2.4em; }
   header .i18n {
     padding: 0.25em 0 0 0.2em; }
@@ -2879,7 +2726,7 @@ header {
   position: relative;
   display: block;
   background-color: white;
-  z-index: 10; }
+  z-index: 11; }
 
 nav.pushy-open ul {
   list-style: none;
@@ -2891,18 +2738,18 @@ nav.pushy-open ul {
 .border-left {
   position: fixed;
   left: 0;
-  z-index: 7; }
+  z-index: 8; }
 
 .border-right {
   position: fixed;
   right: 0;
-  z-index: 8; }
+  z-index: 9; }
 
 footer {
   bottom: 0;
   color: #d7d7d7;
   padding: 0 1.2em;
-  z-index: 6; }
+  z-index: 7; }
   @media (min-width: 480px) {
     footer {
       padding: 0.65em 1.2em; } }
@@ -2915,10 +2762,10 @@ footer {
   width: 100%;
   height: 100%;
   pointer-events: none;
-  background-color: rgba(0, 0, 0, 0.35);
+  background-color: rgba(0, 0, 0, 0.4);
   z-index: 1; }
 
-.index .logo, .about .logo, .rooms .logo, .diningarea .logo, .facilities .logo, .rooms_standard .logo {
+.index .logo, .about .logo, .rooms .logo, .diningarea .logo, .facilities .logo, .rooms_standard .logo, .rooms_superior .logo, .rooms_delux .logo {
   width: 83.33333%;
   float: left;
   margin-left: 8.33333%;
@@ -2930,7 +2777,7 @@ footer {
   margin-top: 50px;
   z-index: 3; }
   @media (min-width: 480px) {
-    .index .logo, .about .logo, .rooms .logo, .diningarea .logo, .facilities .logo, .rooms_standard .logo {
+    .index .logo, .about .logo, .rooms .logo, .diningarea .logo, .facilities .logo, .rooms_standard .logo, .rooms_superior .logo, .rooms_delux .logo {
       width: 83.33333%;
       float: left;
       margin-left: 8.33333%;
@@ -2940,7 +2787,7 @@ footer {
       margin-top: 160px;
       padding: 0 100px; } }
   @media (min-width: 768px) {
-    .index .logo, .about .logo, .rooms .logo, .diningarea .logo, .facilities .logo, .rooms_standard .logo {
+    .index .logo, .about .logo, .rooms .logo, .diningarea .logo, .facilities .logo, .rooms_standard .logo, .rooms_superior .logo, .rooms_delux .logo {
       width: 50%;
       float: left;
       margin-left: 25%;
@@ -2949,7 +2796,7 @@ footer {
       padding-right: 0.83333%;
       margin-top: 150px; } }
   @media (min-width: 960px) {
-    .index .logo, .about .logo, .rooms .logo, .diningarea .logo, .facilities .logo, .rooms_standard .logo {
+    .index .logo, .about .logo, .rooms .logo, .diningarea .logo, .facilities .logo, .rooms_standard .logo, .rooms_superior .logo, .rooms_delux .logo {
       width: 33.33333%;
       float: left;
       margin-left: 33.33333%;
@@ -2959,7 +2806,7 @@ footer {
       margin-top: 170px;
       padding: 0 50px; } }
   @media (min-width: 1440px) {
-    .index .logo, .about .logo, .rooms .logo, .diningarea .logo, .facilities .logo, .rooms_standard .logo {
+    .index .logo, .about .logo, .rooms .logo, .diningarea .logo, .facilities .logo, .rooms_standard .logo, .rooms_superior .logo, .rooms_delux .logo {
       width: 33.33333%;
       float: left;
       margin-left: 33.33333%;
@@ -2968,7 +2815,7 @@ footer {
       padding-right: 0.83333%;
       margin-top: 260px;
       padding: 0 120px; } }
-.index .menu, .about .menu, .rooms .menu, .diningarea .menu, .facilities .menu, .rooms_standard .menu {
+.index .menu, .about .menu, .rooms .menu, .diningarea .menu, .facilities .menu, .rooms_standard .menu, .rooms_superior .menu, .rooms_delux .menu {
   width: 83.33333%;
   float: left;
   margin-left: 8.33333%;
@@ -2979,7 +2826,7 @@ footer {
   position: relative;
   margin-top: 180px; }
   @media (min-width: 480px) {
-    .index .menu, .about .menu, .rooms .menu, .diningarea .menu, .facilities .menu, .rooms_standard .menu {
+    .index .menu, .about .menu, .rooms .menu, .diningarea .menu, .facilities .menu, .rooms_standard .menu, .rooms_superior .menu, .rooms_delux .menu {
       width: 83.33333%;
       float: left;
       margin-left: 8.33333%;
@@ -2988,91 +2835,79 @@ footer {
       padding-right: 0.83333%;
       margin-top: 350px; } }
   @media (min-width: 960px) {
-    .index .menu, .about .menu, .rooms .menu, .diningarea .menu, .facilities .menu, .rooms_standard .menu {
+    .index .menu, .about .menu, .rooms .menu, .diningarea .menu, .facilities .menu, .rooms_standard .menu, .rooms_superior .menu, .rooms_delux .menu {
       margin-top: 340px; } }
   @media (min-width: 1440px) {
-    .index .menu, .about .menu, .rooms .menu, .diningarea .menu, .facilities .menu, .rooms_standard .menu {
+    .index .menu, .about .menu, .rooms .menu, .diningarea .menu, .facilities .menu, .rooms_standard .menu, .rooms_superior .menu, .rooms_delux .menu {
       margin-top: 450px; } }
-.index .menu-item, .about .menu-item, .rooms .menu-item, .diningarea .menu-item, .facilities .menu-item, .rooms_standard .menu-item {
+.index .menu-item, .about .menu-item, .rooms .menu-item, .diningarea .menu-item, .facilities .menu-item, .rooms_standard .menu-item, .rooms_superior .menu-item, .rooms_delux .menu-item {
   list-style: none; }
   @media (min-width: 1440px) {
-    .index .menu-item, .about .menu-item, .rooms .menu-item, .diningarea .menu-item, .facilities .menu-item, .rooms_standard .menu-item {
+    .index .menu-item, .about .menu-item, .rooms .menu-item, .diningarea .menu-item, .facilities .menu-item, .rooms_standard .menu-item, .rooms_superior .menu-item, .rooms_delux .menu-item {
       width: 83.33333%;
       float: left;
       margin-left: 8.33333%;
       margin-right: -100%;
       padding-left: 0.83333%;
       padding-right: 0.83333%; } }
-  .index .menu-item li, .about .menu-item li, .rooms .menu-item li, .diningarea .menu-item li, .facilities .menu-item li, .rooms_standard .menu-item li {
+  .index .menu-item li, .about .menu-item li, .rooms .menu-item li, .diningarea .menu-item li, .facilities .menu-item li, .rooms_standard .menu-item li, .rooms_superior .menu-item li, .rooms_delux .menu-item li {
     display: block;
     text-align: center;
     width: 100%;
     margin-bottom: 0.8em; }
-    .index .menu-item li:first-child, .about .menu-item li:first-child, .rooms .menu-item li:first-child, .diningarea .menu-item li:first-child, .facilities .menu-item li:first-child, .rooms_standard .menu-item li:first-child {
+    .index .menu-item li:first-child, .about .menu-item li:first-child, .rooms .menu-item li:first-child, .diningarea .menu-item li:first-child, .facilities .menu-item li:first-child, .rooms_standard .menu-item li:first-child, .rooms_superior .menu-item li:first-child, .rooms_delux .menu-item li:first-child {
       margin-top: 1.5em; }
-    .index .menu-item li:last-child, .about .menu-item li:last-child, .rooms .menu-item li:last-child, .diningarea .menu-item li:last-child, .facilities .menu-item li:last-child, .rooms_standard .menu-item li:last-child {
+    .index .menu-item li:last-child, .about .menu-item li:last-child, .rooms .menu-item li:last-child, .diningarea .menu-item li:last-child, .facilities .menu-item li:last-child, .rooms_standard .menu-item li:last-child, .rooms_superior .menu-item li:last-child, .rooms_delux .menu-item li:last-child {
       margin-bottom: 1.5em; }
     @media (min-width: 480px) {
-      .index .menu-item li, .about .menu-item li, .rooms .menu-item li, .diningarea .menu-item li, .facilities .menu-item li, .rooms_standard .menu-item li {
+      .index .menu-item li, .about .menu-item li, .rooms .menu-item li, .diningarea .menu-item li, .facilities .menu-item li, .rooms_standard .menu-item li, .rooms_superior .menu-item li, .rooms_delux .menu-item li {
         margin-top: 2em;
         width: 25%;
         float: left;
         padding-left: 0.83333%;
         padding-right: 0.83333%; }
-        .index .menu-item li:first-child, .about .menu-item li:first-child, .rooms .menu-item li:first-child, .diningarea .menu-item li:first-child, .facilities .menu-item li:first-child, .rooms_standard .menu-item li:first-child {
+        .index .menu-item li:first-child, .about .menu-item li:first-child, .rooms .menu-item li:first-child, .diningarea .menu-item li:first-child, .facilities .menu-item li:first-child, .rooms_standard .menu-item li:first-child, .rooms_superior .menu-item li:first-child, .rooms_delux .menu-item li:first-child {
           margin-top: 2em; }
-        .index .menu-item li:last-child, .about .menu-item li:last-child, .rooms .menu-item li:last-child, .diningarea .menu-item li:last-child, .facilities .menu-item li:last-child, .rooms_standard .menu-item li:last-child {
+        .index .menu-item li:last-child, .about .menu-item li:last-child, .rooms .menu-item li:last-child, .diningarea .menu-item li:last-child, .facilities .menu-item li:last-child, .rooms_standard .menu-item li:last-child, .rooms_superior .menu-item li:last-child, .rooms_delux .menu-item li:last-child {
           margin-bottom: 0; } }
-    .index .menu-item li a, .about .menu-item li a, .rooms .menu-item li a, .diningarea .menu-item li a, .facilities .menu-item li a, .rooms_standard .menu-item li a {
-      display: block;
-      padding: 0.5em 0;
-      color: white;
-      width: 100%;
-      height: 44px;
-      border: 1px solid white;
-      background: rgba(0, 0, 0, 0.2); }
-      .index .menu-item li a:hover, .about .menu-item li a:hover, .rooms .menu-item li a:hover, .diningarea .menu-item li a:hover, .facilities .menu-item li a:hover, .rooms_standard .menu-item li a:hover {
-        text-decoration: none;
-        background-color: rgba(255, 255, 255, 0.5);
-        text-shadow: black 0 2px 0; }
-.index .content, .about .content, .rooms .content, .diningarea .content, .facilities .content, .rooms_standard .content {
+.index .content, .about .content, .rooms .content, .diningarea .content, .facilities .content, .rooms_standard .content, .rooms_superior .content, .rooms_delux .content {
   padding: 1em;
   margin: 2em 0 3em 0;
   background-color: rgba(0, 0, 0, 0.3);
   line-height: 1.8; }
   @media (min-width: 960px) {
-    .index .content, .about .content, .rooms .content, .diningarea .content, .facilities .content, .rooms_standard .content {
+    .index .content, .about .content, .rooms .content, .diningarea .content, .facilities .content, .rooms_standard .content, .rooms_superior .content, .rooms_delux .content {
       width: 83.33333%;
       float: left;
       margin-left: 8.33333%;
       margin-right: -100%;
       padding-left: 0.83333%;
       padding-right: 0.83333%; } }
-  .index .content .copy, .about .content .copy, .rooms .content .copy, .diningarea .content .copy, .facilities .content .copy, .rooms_standard .content .copy {
+  .index .content .copy, .about .content .copy, .rooms .content .copy, .diningarea .content .copy, .facilities .content .copy, .rooms_standard .content .copy, .rooms_superior .content .copy, .rooms_delux .content .copy {
     text-align: left; }
     @media (min-width: 480px) {
-      .index .content .copy, .about .content .copy, .rooms .content .copy, .diningarea .content .copy, .facilities .content .copy, .rooms_standard .content .copy {
+      .index .content .copy, .about .content .copy, .rooms .content .copy, .diningarea .content .copy, .facilities .content .copy, .rooms_standard .content .copy, .rooms_superior .content .copy, .rooms_delux .content .copy {
         text-align: center;
         font-size: 1em; } }
   @media (min-width: 480px) {
-    .index .content p, .about .content p, .rooms .content p, .diningarea .content p, .facilities .content p, .rooms_standard .content p {
+    .index .content p, .about .content p, .rooms .content p, .diningarea .content p, .facilities .content p, .rooms_standard .content p, .rooms_superior .content p, .rooms_delux .content p {
       padding: 0 2em; } }
   @media (min-width: 480px) {
-    .index .content h4, .about .content h4, .rooms .content h4, .diningarea .content h4, .facilities .content h4, .rooms_standard .content h4 {
+    .index .content h4, .about .content h4, .rooms .content h4, .diningarea .content h4, .facilities .content h4, .rooms_standard .content h4, .rooms_superior .content h4, .rooms_delux .content h4 {
       padding: 0 1em; } }
 
 @media (min-width: 480px) {
-  .about .menu-item li, .rooms .menu-item li, .diningarea .menu-item li, .facilities .menu-item li, .rooms_standard .menu-item li {
+  .about .menu-item li, .rooms .menu-item li, .diningarea .menu-item li, .facilities .menu-item li, .rooms_standard .menu-item li, .rooms_superior .menu-item li, .rooms_delux .menu-item li {
     width: 33.33333%;
     float: left;
     padding-left: 0.83333%;
     padding-right: 0.83333%; } }
 @media (min-width: 480px) {
-  .about header, .rooms header, .diningarea header, .facilities header, .rooms_standard header {
+  .about header, .rooms header, .diningarea header, .facilities header, .rooms_standard header, .rooms_superior header, .rooms_delux header {
     height: 3.6em; } }
-.about header .links, .rooms header .links, .diningarea header .links, .facilities header .links, .rooms_standard header .links {
+.about header .links, .rooms header .links, .diningarea header .links, .facilities header .links, .rooms_standard header .links, .rooms_superior header .links, .rooms_delux header .links {
   margin-top: 0.5em; }
-.about .title, .rooms .title, .diningarea .title, .facilities .title, .rooms_standard .title {
+.about .title, .rooms .title, .diningarea .title, .facilities .title, .rooms_standard .title, .rooms_superior .title, .rooms_delux .title {
   width: 83.33333%;
   float: left;
   margin-left: 8.33333%;
@@ -3082,98 +2917,98 @@ footer {
   position: relative;
   margin-top: 70px;
   text-align: center;
-  z-index: 4; }
+  z-index: 5; }
   @media (min-width: 480px) {
-    .about .title, .rooms .title, .diningarea .title, .facilities .title, .rooms_standard .title {
+    .about .title, .rooms .title, .diningarea .title, .facilities .title, .rooms_standard .title, .rooms_superior .title, .rooms_delux .title {
       margin-top: 250px; } }
   @media (min-width: 1440px) {
-    .about .title, .rooms .title, .diningarea .title, .facilities .title, .rooms_standard .title {
+    .about .title, .rooms .title, .diningarea .title, .facilities .title, .rooms_standard .title, .rooms_superior .title, .rooms_delux .title {
       margin-top: 350px; } }
-  .about .title h2, .rooms .title h2, .diningarea .title h2, .facilities .title h2, .rooms_standard .title h2 {
+  .about .title h2, .rooms .title h2, .diningarea .title h2, .facilities .title h2, .rooms_standard .title h2, .rooms_superior .title h2, .rooms_delux .title h2 {
     font-size: 2em; }
     @media (min-width: 480px) {
-      .about .title h2, .rooms .title h2, .diningarea .title h2, .facilities .title h2, .rooms_standard .title h2 {
+      .about .title h2, .rooms .title h2, .diningarea .title h2, .facilities .title h2, .rooms_standard .title h2, .rooms_superior .title h2, .rooms_delux .title h2 {
         font-size: 4em; } }
-.about .menu, .rooms .menu, .diningarea .menu, .facilities .menu, .rooms_standard .menu {
+.about .menu, .rooms .menu, .diningarea .menu, .facilities .menu, .rooms_standard .menu, .rooms_superior .menu, .rooms_delux .menu {
   margin-top: 130px; }
   @media (min-width: 480px) {
-    .about .menu, .rooms .menu, .diningarea .menu, .facilities .menu, .rooms_standard .menu {
+    .about .menu, .rooms .menu, .diningarea .menu, .facilities .menu, .rooms_standard .menu, .rooms_superior .menu, .rooms_delux .menu {
       margin-top: 340px; } }
   @media (min-width: 1440px) {
-    .about .menu, .rooms .menu, .diningarea .menu, .facilities .menu, .rooms_standard .menu {
+    .about .menu, .rooms .menu, .diningarea .menu, .facilities .menu, .rooms_standard .menu, .rooms_superior .menu, .rooms_delux .menu {
       margin-top: 440px; } }
-.about .sub-title, .rooms .sub-title, .diningarea .sub-title, .facilities .sub-title, .rooms_standard .sub-title {
+.about .sub-title, .rooms .sub-title, .diningarea .sub-title, .facilities .sub-title, .rooms_standard .sub-title, .rooms_superior .sub-title, .rooms_delux .sub-title {
   text-align: center;
   font-size: 0.8125em;
   font-family: Georgia, serif; }
   @media (min-width: 480px) {
-    .about .sub-title, .rooms .sub-title, .diningarea .sub-title, .facilities .sub-title, .rooms_standard .sub-title {
+    .about .sub-title, .rooms .sub-title, .diningarea .sub-title, .facilities .sub-title, .rooms_standard .sub-title, .rooms_superior .sub-title, .rooms_delux .sub-title {
       font-size: 1.25em; } }
-.about .arrow, .rooms .arrow, .diningarea .arrow, .facilities .arrow, .rooms_standard .arrow {
+.about .arrow, .rooms .arrow, .diningarea .arrow, .facilities .arrow, .rooms_standard .arrow, .rooms_superior .arrow, .rooms_delux .arrow {
   margin-top: 150px;
   text-align: center; }
-  .about .arrow a, .rooms .arrow a, .diningarea .arrow a, .facilities .arrow a, .rooms_standard .arrow a {
+  .about .arrow a, .rooms .arrow a, .diningarea .arrow a, .facilities .arrow a, .rooms_standard .arrow a, .rooms_superior .arrow a, .rooms_delux .arrow a {
     color: white; }
-    .about .arrow a:hover, .rooms .arrow a:hover, .diningarea .arrow a:hover, .facilities .arrow a:hover, .rooms_standard .arrow a:hover {
+    .about .arrow a:hover, .rooms .arrow a:hover, .diningarea .arrow a:hover, .facilities .arrow a:hover, .rooms_standard .arrow a:hover, .rooms_superior .arrow a:hover, .rooms_delux .arrow a:hover {
       color: #e6e6e6; }
-.about .content h4, .rooms .content h4, .diningarea .content h4, .facilities .content h4, .rooms_standard .content h4 {
+.about .content h4, .rooms .content h4, .diningarea .content h4, .facilities .content h4, .rooms_standard .content h4, .rooms_superior .content h4, .rooms_delux .content h4 {
   font-size: 1.25em;
   padding-bottom: 2em; }
-.about .gallery, .rooms .gallery, .diningarea .gallery, .facilities .gallery, .rooms_standard .gallery {
+.about .gallery, .rooms .gallery, .diningarea .gallery, .facilities .gallery, .rooms_standard .gallery, .rooms_superior .gallery, .rooms_delux .gallery {
   margin-top: 1em; }
-  .about .gallery .pic, .rooms .gallery .pic, .diningarea .gallery .pic, .facilities .gallery .pic, .rooms_standard .gallery .pic {
+  .about .gallery .pic, .rooms .gallery .pic, .diningarea .gallery .pic, .facilities .gallery .pic, .rooms_standard .gallery .pic, .rooms_superior .gallery .pic, .rooms_delux .gallery .pic {
     width: 50%;
     float: left;
     padding-left: 0.83333%;
     padding-right: 0.83333%;
     margin-bottom: 0.5em; }
-    .about .gallery .pic:nth-child(2n + 1), .rooms .gallery .pic:nth-child(2n + 1), .diningarea .gallery .pic:nth-child(2n + 1), .facilities .gallery .pic:nth-child(2n + 1), .rooms_standard .gallery .pic:nth-child(2n + 1) {
+    .about .gallery .pic:nth-child(2n + 1), .rooms .gallery .pic:nth-child(2n + 1), .diningarea .gallery .pic:nth-child(2n + 1), .facilities .gallery .pic:nth-child(2n + 1), .rooms_standard .gallery .pic:nth-child(2n + 1), .rooms_superior .gallery .pic:nth-child(2n + 1), .rooms_delux .gallery .pic:nth-child(2n + 1) {
       margin-left: 0;
       margin-right: -100%;
       clear: both; }
-    .about .gallery .pic:nth-child(2n + 2), .rooms .gallery .pic:nth-child(2n + 2), .diningarea .gallery .pic:nth-child(2n + 2), .facilities .gallery .pic:nth-child(2n + 2), .rooms_standard .gallery .pic:nth-child(2n + 2) {
+    .about .gallery .pic:nth-child(2n + 2), .rooms .gallery .pic:nth-child(2n + 2), .diningarea .gallery .pic:nth-child(2n + 2), .facilities .gallery .pic:nth-child(2n + 2), .rooms_standard .gallery .pic:nth-child(2n + 2), .rooms_superior .gallery .pic:nth-child(2n + 2), .rooms_delux .gallery .pic:nth-child(2n + 2) {
       margin-left: 50%;
       margin-right: -100%;
       clear: none; }
     @media (min-width: 480px) {
-      .about .gallery .pic, .rooms .gallery .pic, .diningarea .gallery .pic, .facilities .gallery .pic, .rooms_standard .gallery .pic {
+      .about .gallery .pic, .rooms .gallery .pic, .diningarea .gallery .pic, .facilities .gallery .pic, .rooms_standard .gallery .pic, .rooms_superior .gallery .pic, .rooms_delux .gallery .pic {
         width: 25%;
         float: left;
         padding-left: 0.83333%;
         padding-right: 0.83333%;
         margin-bottom: 1em; }
-        .about .gallery .pic:nth-child(4n + 1), .rooms .gallery .pic:nth-child(4n + 1), .diningarea .gallery .pic:nth-child(4n + 1), .facilities .gallery .pic:nth-child(4n + 1), .rooms_standard .gallery .pic:nth-child(4n + 1) {
+        .about .gallery .pic:nth-child(4n + 1), .rooms .gallery .pic:nth-child(4n + 1), .diningarea .gallery .pic:nth-child(4n + 1), .facilities .gallery .pic:nth-child(4n + 1), .rooms_standard .gallery .pic:nth-child(4n + 1), .rooms_superior .gallery .pic:nth-child(4n + 1), .rooms_delux .gallery .pic:nth-child(4n + 1) {
           margin-left: 0;
           margin-right: -100%;
           clear: both; }
-        .about .gallery .pic:nth-child(4n + 2), .rooms .gallery .pic:nth-child(4n + 2), .diningarea .gallery .pic:nth-child(4n + 2), .facilities .gallery .pic:nth-child(4n + 2), .rooms_standard .gallery .pic:nth-child(4n + 2) {
+        .about .gallery .pic:nth-child(4n + 2), .rooms .gallery .pic:nth-child(4n + 2), .diningarea .gallery .pic:nth-child(4n + 2), .facilities .gallery .pic:nth-child(4n + 2), .rooms_standard .gallery .pic:nth-child(4n + 2), .rooms_superior .gallery .pic:nth-child(4n + 2), .rooms_delux .gallery .pic:nth-child(4n + 2) {
           margin-left: 25%;
           margin-right: -100%;
           clear: none; }
-        .about .gallery .pic:nth-child(4n + 3), .rooms .gallery .pic:nth-child(4n + 3), .diningarea .gallery .pic:nth-child(4n + 3), .facilities .gallery .pic:nth-child(4n + 3), .rooms_standard .gallery .pic:nth-child(4n + 3) {
+        .about .gallery .pic:nth-child(4n + 3), .rooms .gallery .pic:nth-child(4n + 3), .diningarea .gallery .pic:nth-child(4n + 3), .facilities .gallery .pic:nth-child(4n + 3), .rooms_standard .gallery .pic:nth-child(4n + 3), .rooms_superior .gallery .pic:nth-child(4n + 3), .rooms_delux .gallery .pic:nth-child(4n + 3) {
           margin-left: 50%;
           margin-right: -100%;
           clear: none; }
-        .about .gallery .pic:nth-child(4n + 4), .rooms .gallery .pic:nth-child(4n + 4), .diningarea .gallery .pic:nth-child(4n + 4), .facilities .gallery .pic:nth-child(4n + 4), .rooms_standard .gallery .pic:nth-child(4n + 4) {
+        .about .gallery .pic:nth-child(4n + 4), .rooms .gallery .pic:nth-child(4n + 4), .diningarea .gallery .pic:nth-child(4n + 4), .facilities .gallery .pic:nth-child(4n + 4), .rooms_standard .gallery .pic:nth-child(4n + 4), .rooms_superior .gallery .pic:nth-child(4n + 4), .rooms_delux .gallery .pic:nth-child(4n + 4) {
           margin-left: 75%;
           margin-right: -100%;
           clear: none; } }
-  .about .gallery img, .rooms .gallery img, .diningarea .gallery img, .facilities .gallery img, .rooms_standard .gallery img {
+  .about .gallery img, .rooms .gallery img, .diningarea .gallery img, .facilities .gallery img, .rooms_standard .gallery img, .rooms_superior .gallery img, .rooms_delux .gallery img {
     border: 5px solid white; }
 @media (min-width: 480px) {
-  .about .map-wraper, .rooms .map-wraper, .diningarea .map-wraper, .facilities .map-wraper, .rooms_standard .map-wraper {
+  .about .map-wraper, .rooms .map-wraper, .diningarea .map-wraper, .facilities .map-wraper, .rooms_standard .map-wraper, .rooms_superior .map-wraper, .rooms_delux .map-wraper {
     padding: 0 2em; } }
-.about .map-view, .rooms .map-view, .diningarea .map-view, .facilities .map-view, .rooms_standard .map-view {
+.about .map-view, .rooms .map-view, .diningarea .map-view, .facilities .map-view, .rooms_standard .map-view, .rooms_superior .map-view, .rooms_delux .map-view {
   height: 250px;
   background-color: white; }
 @media (min-width: 480px) {
-  .about #activities ul, .rooms #activities ul, .diningarea #activities ul, .facilities #activities ul, .rooms_standard #activities ul {
+  .about #activities ul, .rooms #activities ul, .diningarea #activities ul, .facilities #activities ul, .rooms_standard #activities ul, .rooms_superior #activities ul, .rooms_delux #activities ul {
     width: 58.33333%;
     float: left;
     padding-left: 0.83333%;
     padding-right: 0.83333%;
     padding-left: 3em; }
-  .about #activities img, .rooms #activities img, .diningarea #activities img, .facilities #activities img, .rooms_standard #activities img {
+  .about #activities img, .rooms #activities img, .diningarea #activities img, .facilities #activities img, .rooms_standard #activities img, .rooms_superior #activities img, .rooms_delux #activities img {
     width: 41.66667%;
     float: left;
     padding-left: 0.83333%;
@@ -3215,13 +3050,235 @@ footer {
     background-color: #6a6255;
     color: white; }
 
-.room_info {
+.rooms_standard .title, .rooms_superior .title, .rooms_delux .title {
+  width: 83.33333%;
+  float: left;
+  margin-left: 8.33333%;
+  margin-right: -100%;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  margin-top: 20px; }
+  @media (min-width: 480px) {
+    .rooms_standard .title, .rooms_superior .title, .rooms_delux .title {
+      margin-top: 100px; } }
+  @media (min-width: 960px) {
+    .rooms_standard .title, .rooms_superior .title, .rooms_delux .title {
+      margin-top: 80px; } }
+  @media (min-width: 1440px) {
+    .rooms_standard .title, .rooms_superior .title, .rooms_delux .title {
+      margin-top: 120px; } }
+.rooms_standard .menu, .rooms_superior .menu, .rooms_delux .menu {
+  margin-top: 80px; }
+  @media (min-width: 480px) {
+    .rooms_standard .menu, .rooms_superior .menu, .rooms_delux .menu {
+      margin-top: 195px; } }
+  @media (min-width: 960px) {
+    .rooms_standard .menu, .rooms_superior .menu, .rooms_delux .menu {
+      margin-top: 170px; } }
+  @media (min-width: 1440px) {
+    .rooms_standard .menu, .rooms_superior .menu, .rooms_delux .menu {
+      margin-top: 210px; } }
+
+.rooms_standard .room-gallery, .rooms_superior .room-gallery, .rooms_delux .room-gallery {
+  width: 100%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%; }
+  .rooms_standard .room-gallery .pic, .rooms_superior .room-gallery .pic, .rooms_delux .room-gallery .pic {
+    margin-bottom: 0.5em; }
+  .rooms_standard .room-gallery img, .rooms_superior .room-gallery img, .rooms_delux .room-gallery img {
+    border: 2px solid white; }
+  @media (min-width: 480px) {
+    .rooms_standard .room-gallery, .rooms_superior .room-gallery, .rooms_delux .room-gallery {
+      margin-top: 1em;
+      width: 83.33333%;
+      float: left;
+      padding-left: 0.83333%;
+      padding-right: 0.83333%;
+      margin-left: 8.33333%; } }
+  @media (min-width: 768px) {
+    .rooms_standard .room-gallery, .rooms_superior .room-gallery, .rooms_delux .room-gallery {
+      width: 66.66667%;
+      float: left;
+      padding-left: 0.83333%;
+      padding-right: 0.83333%;
+      margin-left: 16.66667%; } }
+
+.rooms_standard .room-gallery {
+  width: 25%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  margin-left: 37.5%; }
+  .rooms_standard .room-gallery .pic {
+    width: 100%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%; }
+
+.rooms_superior .room-gallery .pic {
+  width: 25%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%; }
+
+.rooms_delux .room-gallery {
+  width: 66.66667%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  margin-left: 16.66667%; }
+  .rooms_delux .room-gallery .pic {
+    width: 33.33333%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%; }
+
+.room-info {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 50%;
-  background-color: white;
-  z-index: false; }
+  height: 60%;
+  background-color: #e5e5e5;
+  z-index: 4;
+  padding: 0.6em 1.8em 1.8em 1.8em; }
+  @media (min-width: 480px) {
+    .room-info {
+      padding: 0.6em 1.8em 3em 1.8em;
+      height: 50%; } }
+  @media (min-width: 768px) {
+    .room-info {
+      height: 45%; } }
+  @media (min-width: 1440px) {
+    .room-info {
+      height: 25%; } }
+  .room-info .info-wraper {
+    width: 100%;
+    height: 100%;
+    background-color: #2e2c2a;
+    overflow: scroll; }
+  .room-info .info-intro, .room-info .info-facilities {
+    padding: 0.5em; }
+    .room-info .info-intro .spec, .room-info .info-facilities .spec {
+      border-bottom: 1px solid white;
+      margin-bottom: 0.5em; }
+      .room-info .info-intro .spec h4, .room-info .info-facilities .spec h4 {
+        font-size: 0.8125em;
+        padding-bottom: 0.1em; }
+        @media (min-width: 480px) {
+          .room-info .info-intro .spec h4, .room-info .info-facilities .spec h4 {
+            font-size: 1em;
+            padding: 0 0.5em; } }
+    .room-info .info-intro p, .room-info .info-facilities p {
+      font-size: 0.8125em;
+      padding: 0 1em; }
+    .room-info .info-intro .zh, .room-info .info-facilities .zh {
+      font-size: 0.8125em; }
+    .room-info .info-intro .bed, .room-info .info-facilities .bed {
+      padding: 0;
+      color: #d7d1b3;
+      font-size: 0.75em; }
+    .room-info .info-intro .cost, .room-info .info-facilities .cost {
+      color: #f0c0c0;
+      font-size: 0.75em;
+      text-align: right;
+      margin-top: 0.4em; }
+      @media (min-width: 480px) {
+        .room-info .info-intro .cost, .room-info .info-facilities .cost {
+          margin-top: 0.4em; } }
+    @media (min-width: 480px) {
+      .room-info .info-intro, .room-info .info-facilities {
+        width: 50%;
+        float: left;
+        padding-left: 0.83333%;
+        padding-right: 0.83333%; } }
+    @media (min-width: 1440px) {
+      .room-info .info-intro, .room-info .info-facilities {
+        width: 41.66667%;
+        float: left;
+        padding-left: 0.83333%;
+        padding-right: 0.83333%; } }
+  .room-info .info-facilities li {
+    font-size: 0.8125em;
+    display: inline-block;
+    width: 100%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+    margin-top: 0.3em; }
+    @media (min-width: 960px) {
+      .room-info .info-facilities li {
+        width: 50%;
+        float: left;
+        padding-left: 0.83333%;
+        padding-right: 0.83333%; }
+        .room-info .info-facilities li:nth-child(2n + 1) {
+          margin-left: 0;
+          margin-right: -100%;
+          clear: both; }
+        .room-info .info-facilities li:nth-child(2n + 2) {
+          margin-left: 50%;
+          margin-right: -100%;
+          clear: none; } }
+    @media (min-width: 1440px) {
+      .room-info .info-facilities li {
+        width: 33.33333%;
+        float: left;
+        padding-left: 0.83333%;
+        padding-right: 0.83333%; }
+        .room-info .info-facilities li:nth-child(3n + 1) {
+          margin-left: 0;
+          margin-right: -100%;
+          clear: both; }
+        .room-info .info-facilities li:nth-child(3n + 2) {
+          margin-left: 33.33333%;
+          margin-right: -100%;
+          clear: none; }
+        .room-info .info-facilities li:nth-child(3n + 3) {
+          margin-left: 66.66667%;
+          margin-right: -100%;
+          clear: none; } }
+  .room-info .info-navi {
+    border-top: 2px double rgba(255, 255, 255, 0.3); }
+    @media (min-width: 480px) {
+      .room-info .info-navi {
+        padding-top: 0.5em; } }
+    @media (min-width: 768px) {
+      .room-info .info-navi {
+        padding-top: 1em; } }
+    @media (min-width: 960px) {
+      .room-info .info-navi {
+        padding-top: 1.5em; } }
+    @media (min-width: 1440px) {
+      .room-info .info-navi {
+        padding-top: 3.5em;
+        width: 16.66667%;
+        float: left;
+        padding-left: 0.83333%;
+        padding-right: 0.83333%; } }
+    .room-info .info-navi .back, .room-info .info-navi .nextlevel {
+      width: 100%;
+      float: left;
+      padding-left: 0.83333%;
+      padding-right: 0.83333%;
+      padding: 0.2em;
+      text-align: center; }
+      @media (min-width: 480px) {
+        .room-info .info-navi .back, .room-info .info-navi .nextlevel {
+          width: 25%;
+          float: left;
+          padding-left: 0.83333%;
+          padding-right: 0.83333%;
+          float: right; } }
+      @media (min-width: 1440px) {
+        .room-info .info-navi .back, .room-info .info-navi .nextlevel {
+          width: 100%;
+          float: left;
+          padding-left: 0.83333%;
+          padding-right: 0.83333%; } }
+    @media (min-width: 480px) {
+      .room-info .info-navi a {
+        height: 38px; } }
 
 @media (min-width: 480px) {
   .diningarea .menu-item li {

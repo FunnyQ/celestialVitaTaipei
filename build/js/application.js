@@ -34,18 +34,10 @@
    * lightbox
    */
 
-  $(".gallery a").fancybox({
+  $(".gallery a, .room-gallery a").fancybox({
     helpers: {
       title: 'outside'
     }
   });
-
-  $(".open-photo").fancybox({
-    helpers: {
-      title: 'outside'
-    }
-  });
-
-  $('.carousel').carousel();
 
 }).call(this);
