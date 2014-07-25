@@ -2784,7 +2784,7 @@ footer {
       margin-right: -100%;
       padding-left: 0.83333%;
       padding-right: 0.83333%;
-      margin-top: 160px;
+      margin-top: 130px;
       padding: 0 100px; } }
   @media (min-width: 768px) {
     .index .logo, .about .logo, .rooms .logo, .diningarea .logo, .facilities .logo, .rooms_standard .logo, .rooms_superior .logo, .rooms_delux .logo {
@@ -3178,6 +3178,10 @@ footer {
       padding: 0;
       color: #d7d1b3;
       font-size: 0.75em; }
+    .room-info .info-intro .extrainfo, .room-info .info-facilities .extrainfo {
+      font-size: 0.75em;
+      color: #afaba8;
+      margin-bottom: 0; }
     .room-info .info-intro .cost, .room-info .info-facilities .cost {
       color: #f0c0c0;
       font-size: 0.75em;
@@ -3200,6 +3204,7 @@ footer {
         padding-right: 0.83333%; } }
   .room-info .info-facilities li {
     font-size: 0.8125em;
+    color: #c8c5c2;
     display: inline-block;
     width: 100%;
     float: left;
@@ -3239,7 +3244,7 @@ footer {
           margin-right: -100%;
           clear: none; } }
   .room-info .info-navi {
-    border-top: 2px double rgba(255, 255, 255, 0.3); }
+    border-top: 2px double #494642; }
     @media (min-width: 480px) {
       .room-info .info-navi {
         padding-top: 0.5em; } }
