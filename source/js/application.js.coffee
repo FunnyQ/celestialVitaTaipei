@@ -34,6 +34,6 @@ $("#bgslide").maximage
 ###
 # lightbox
 ###
-$(".gallery a, .room-gallery a, .open-photo").fancybox
+$(".gallery a, .room-gallery a, .open-photo, .activities-map").fancybox
   helpers:
     title: 'outside'
