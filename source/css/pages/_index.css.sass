@@ -85,7 +85,11 @@
     background-color: rgba(#000, 0.3)
     line-height: 1.8
     +breakpoint($b-desktop)
-      +span(isolate 10 at 2)
+      +span(11.6)
+      +push(0.2)
+    +breakpoint($b-xlarge)
+      +span(9.6)
+      +push(1.2)
 
     .copy
       text-align: left
