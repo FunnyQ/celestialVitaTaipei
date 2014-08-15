@@ -66,6 +66,9 @@
   .gallery
     @extend %span12
     margin-top: 1em
+    padding-bottom: 1em
+    +breakpoint($b-mobile)
+      padding: 0 2em 1em 2em
     .pic
       +gallery(6)
       margin-bottom: 0.5em
@@ -76,14 +79,17 @@
       border: 5px solid #fff
 
   .map-wraper
+    padding: 1em 0
     +breakpoint($b-mobile)
-      padding: 0 2em
+      padding: 1em 2em
   .map-view
     @extend %span12
     height: 250px
     background-color: #fff
 
   #activities
+    img
+      padding: 1em 0
     +breakpoint($b-mobile)
       ul
         +span(7)
@@ -91,3 +97,15 @@
       img
         +span(5)
         padding: 0 1em
+
+  .back2top
+    padding: 0.1em 0.5em
+    color: $cvt-white
+    border: 2px solid $cvt-white
+    &:hover
+      text-decoration: none
+      background-color: rgba($cvt-white, 0.5)
+      color: #000
+      +text-shadow(0 1px 0 #fff)
+    +breakpoint($b-mobile)
+      margin-left: 2em

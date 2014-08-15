@@ -37,3 +37,18 @@ $("#bgslide").maximage
 $(".gallery a, .room-gallery a, .open-photo, .activities-map").fancybox
   helpers:
     title: 'outside'
+
+
+###
+# smooth scrollTop function
+###
+
+$("a[href*=#]:not([href=#])").click ->
+  if location.pathname.replace(/^\//, "") is @pathname.replace(/^\//, "") and location.hostname is @hostname
+    target = $(@hash)
+    target = (if target.length then target else $("[name=" + @hash.slice(1) + "]"))
+    if target.length
+      $(".main").animate
+        scrollTop: target.offset().top - 58 # -58 是 offset navibar 的高度
+      , 1000
+      false
