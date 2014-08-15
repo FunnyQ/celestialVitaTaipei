@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Playfair+Display+SC:700);
+@import url(http://fonts.googleapis.com/css?family=Aguafina+Script);
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -2658,26 +2659,39 @@ header .links, header .breadcrumbs, header .pages-logo, .about .arrow, .rooms .a
 .border-left, .border-right {
   height: 100%;
   width: 1.2em;
-  background-color: white; }
+  background-color: #fffef7; }
 
-.index .menu-item li a, .about .menu-item li a, .rooms .menu-item li a, .diningarea .menu-item li a, .facilities .menu-item li a, .rooms_standard .menu-item li a, .rooms_superior .menu-item li a, .rooms_delux .menu-item li a, .room-info .info-navi a {
+.index .menu-item li a, .about .menu-item li a, .rooms .menu-item li a, .diningarea .menu-item li a, .facilities .menu-item li a, .rooms_standard .menu-item li a, .rooms_superior .menu-item li a, .rooms_delux .menu-item li a {
   display: block;
   padding: 0.5em 0;
-  color: white;
+  color: #fffef7;
   width: 100%;
   height: 44px;
   border: 1px solid white;
   background: rgba(0, 0, 0, 0.2); }
-  .index .menu-item li a:hover, .about .menu-item li a:hover, .rooms .menu-item li a:hover, .diningarea .menu-item li a:hover, .facilities .menu-item li a:hover, .rooms_standard .menu-item li a:hover, .rooms_superior .menu-item li a:hover, .rooms_delux .menu-item li a:hover, .room-info .info-navi a:hover {
+  .index .menu-item li a:hover, .about .menu-item li a:hover, .rooms .menu-item li a:hover, .diningarea .menu-item li a:hover, .facilities .menu-item li a:hover, .rooms_standard .menu-item li a:hover, .rooms_superior .menu-item li a:hover, .rooms_delux .menu-item li a:hover {
     text-decoration: none;
     background-color: rgba(255, 255, 255, 0.5);
     text-shadow: black 0 2px 0; }
 
+.room-info .info-navi a {
+  display: block;
+  padding: 0.4em 0;
+  color: #2e2c2a;
+  width: 100%;
+  height: 44px;
+  border: 1px solid #cccccc;
+  background: #fffef7; }
+  .room-info .info-navi a:hover {
+    text-decoration: none;
+    background-color: rgba(255, 254, 247, 0.85);
+    text-shadow: white 0 -2px 0; }
+
 body {
-  background-color: white; }
+  background-color: #fffef7; }
 
 header, footer {
-  background-color: white;
+  background-color: #fffef7;
   width: 100%;
   position: fixed;
   height: 1.2em; }
@@ -2691,7 +2705,7 @@ header {
   z-index: 6;
   height: 2.4em; }
   header .i18n {
-    padding: 0.25em 0 0 0.2em; }
+    padding: 7px 0 0 0.2em; }
   header a {
     font-size: 0.75em;
     color: #a4a4a4; }
@@ -2708,18 +2722,21 @@ header {
       margin-right: 1em;
       margin-top: -0.4em; }
       header .breadcrumbs li:first-child {
-        margin-left: 2.5em; }
-    @media (min-width: 960px) {
+        margin-left: 1.7em; }
+    @media (min-width: 769px) {
       header .breadcrumbs {
         font-size: 1.25em; }
         header .breadcrumbs li:first-child {
-          margin-left: 11em; } }
+          margin-left: 6em; } }
+    @media (min-width: 1025px) {
+      header .breadcrumbs li:first-child {
+        margin-left: 11em; } }
     @media (min-width: 1440px) {
       header .breadcrumbs li:first-child {
         margin-left: 28em; } }
   header .pages-logo {
     float: left;
-    width: 140px;
+    width: 160px;
     margin-top: -0.5em; }
 
 .menu-btn a {
@@ -2747,7 +2764,7 @@ nav.pushy-open ul {
 
 footer {
   bottom: 0;
-  color: #d7d7d7;
+  color: #b1b1b1;
   padding: 0 1.2em;
   z-index: 7; }
   @media (min-width: 480px) {
@@ -2755,6 +2772,11 @@ footer {
       padding: 0.65em 1.2em; } }
   footer p {
     font-size: 0.75em; }
+  footer a {
+    color: #b1b1b1; }
+    footer a:hover {
+      color: #979797;
+      text-decoration: none; }
 
 .overlay {
   position: absolute;
@@ -2764,6 +2786,9 @@ footer {
   pointer-events: none;
   background-color: rgba(0, 0, 0, 0.4);
   z-index: 1; }
+
+.index .links {
+  margin-top: -6px; }
 
 .index .logo, .about .logo, .rooms .logo, .diningarea .logo, .facilities .logo, .rooms_standard .logo, .rooms_superior .logo, .rooms_delux .logo {
   width: 83.33333%;
@@ -2877,12 +2902,18 @@ footer {
   line-height: 1.8; }
   @media (min-width: 960px) {
     .index .content, .about .content, .rooms .content, .diningarea .content, .facilities .content, .rooms_standard .content, .rooms_superior .content, .rooms_delux .content {
-      width: 83.33333%;
+      width: 96.66667%;
       float: left;
-      margin-left: 8.33333%;
-      margin-right: -100%;
       padding-left: 0.83333%;
-      padding-right: 0.83333%; } }
+      padding-right: 0.83333%;
+      margin-left: 1.66667%; } }
+  @media (min-width: 1440px) {
+    .index .content, .about .content, .rooms .content, .diningarea .content, .facilities .content, .rooms_standard .content, .rooms_superior .content, .rooms_delux .content {
+      width: 80%;
+      float: left;
+      padding-left: 0.83333%;
+      padding-right: 0.83333%;
+      margin-left: 10%; } }
   .index .content .copy, .about .content .copy, .rooms .content .copy, .diningarea .content .copy, .facilities .content .copy, .rooms_standard .content .copy, .rooms_superior .content .copy, .rooms_delux .content .copy {
     text-align: left; }
     @media (min-width: 480px) {
@@ -2906,7 +2937,7 @@ footer {
   .about header, .rooms header, .diningarea header, .facilities header, .rooms_standard header, .rooms_superior header, .rooms_delux header {
     height: 3.6em; } }
 .about header .links, .rooms header .links, .diningarea header .links, .facilities header .links, .rooms_standard header .links, .rooms_superior header .links, .rooms_delux header .links {
-  margin-top: 0.5em; }
+  margin-top: 4px; }
 .about .title, .rooms .title, .diningarea .title, .facilities .title, .rooms_standard .title, .rooms_superior .title, .rooms_delux .title {
   width: 83.33333%;
   float: left;
@@ -2955,7 +2986,11 @@ footer {
   font-size: 1.25em;
   padding-bottom: 2em; }
 .about .gallery, .rooms .gallery, .diningarea .gallery, .facilities .gallery, .rooms_standard .gallery, .rooms_superior .gallery, .rooms_delux .gallery {
-  margin-top: 1em; }
+  margin-top: 1em;
+  padding-bottom: 1em; }
+  @media (min-width: 480px) {
+    .about .gallery, .rooms .gallery, .diningarea .gallery, .facilities .gallery, .rooms_standard .gallery, .rooms_superior .gallery, .rooms_delux .gallery {
+      padding: 0 2em 1em 2em; } }
   .about .gallery .pic, .rooms .gallery .pic, .diningarea .gallery .pic, .facilities .gallery .pic, .rooms_standard .gallery .pic, .rooms_superior .gallery .pic, .rooms_delux .gallery .pic {
     width: 50%;
     float: left;
@@ -2995,12 +3030,16 @@ footer {
           clear: none; } }
   .about .gallery img, .rooms .gallery img, .diningarea .gallery img, .facilities .gallery img, .rooms_standard .gallery img, .rooms_superior .gallery img, .rooms_delux .gallery img {
     border: 5px solid white; }
-@media (min-width: 480px) {
-  .about .map-wraper, .rooms .map-wraper, .diningarea .map-wraper, .facilities .map-wraper, .rooms_standard .map-wraper, .rooms_superior .map-wraper, .rooms_delux .map-wraper {
-    padding: 0 2em; } }
+.about .map-wraper, .rooms .map-wraper, .diningarea .map-wraper, .facilities .map-wraper, .rooms_standard .map-wraper, .rooms_superior .map-wraper, .rooms_delux .map-wraper {
+  padding: 1em 0; }
+  @media (min-width: 480px) {
+    .about .map-wraper, .rooms .map-wraper, .diningarea .map-wraper, .facilities .map-wraper, .rooms_standard .map-wraper, .rooms_superior .map-wraper, .rooms_delux .map-wraper {
+      padding: 1em 2em; } }
 .about .map-view, .rooms .map-view, .diningarea .map-view, .facilities .map-view, .rooms_standard .map-view, .rooms_superior .map-view, .rooms_delux .map-view {
   height: 250px;
   background-color: white; }
+.about #activities img, .rooms #activities img, .diningarea #activities img, .facilities #activities img, .rooms_standard #activities img, .rooms_superior #activities img, .rooms_delux #activities img {
+  padding: 1em 0; }
 @media (min-width: 480px) {
   .about #activities ul, .rooms #activities ul, .diningarea #activities ul, .facilities #activities ul, .rooms_standard #activities ul, .rooms_superior #activities ul, .rooms_delux #activities ul {
     width: 58.33333%;
@@ -3014,41 +3053,86 @@ footer {
     padding-left: 0.83333%;
     padding-right: 0.83333%;
     padding: 0 1em; } }
+.about .back2top, .rooms .back2top, .diningarea .back2top, .facilities .back2top, .rooms_standard .back2top, .rooms_superior .back2top, .rooms_delux .back2top {
+  padding: 0.1em 0.5em;
+  color: #fffef7;
+  border: 2px solid #fffef7; }
+  .about .back2top:hover, .rooms .back2top:hover, .diningarea .back2top:hover, .facilities .back2top:hover, .rooms_standard .back2top:hover, .rooms_superior .back2top:hover, .rooms_delux .back2top:hover {
+    text-decoration: none;
+    background-color: rgba(255, 254, 247, 0.5);
+    color: black;
+    text-shadow: 0 1px 0 white; }
+  @media (min-width: 480px) {
+    .about .back2top, .rooms .back2top, .diningarea .back2top, .facilities .back2top, .rooms_standard .back2top, .rooms_superior .back2top, .rooms_delux .back2top {
+      margin-left: 2em; } }
 
 @media (min-width: 960px) {
-  .rooms .title, .diningarea .title, .rooms_standard .title {
-    margin-top: 180px; } }
+  .rooms .title, .diningarea .title {
+    margin-top: 150px; } }
 @media (min-width: 960px) {
-  .rooms .menu, .diningarea .menu, .rooms_standard .menu {
-    margin-top: 270px; } }
-.rooms .menu-item .rooms-wraper, .diningarea .menu-item .rooms-wraper, .rooms_standard .menu-item .rooms-wraper {
+  .rooms .menu, .diningarea .menu {
+    margin-top: 240px; } }
+.rooms .menu-item .rooms-wraper, .rooms .menu-item .dining-wraper, .diningarea .menu-item .rooms-wraper, .diningarea .menu-item .dining-wraper {
   width: 100%;
   float: left;
   padding-left: 0.83333%;
   padding-right: 0.83333%;
   background-color: rgba(255, 255, 255, 0.5);
   padding: 0.5em; }
-  .rooms .menu-item .rooms-wraper a, .diningarea .menu-item .rooms-wraper a, .rooms_standard .menu-item .rooms-wraper a {
+  .rooms .menu-item .rooms-wraper a, .rooms .menu-item .dining-wraper a, .diningarea .menu-item .rooms-wraper a, .diningarea .menu-item .dining-wraper a {
+    position: relative;
     height: auto;
     background-color: rgba(255, 255, 255, 0.5);
     border: 0;
-    padding-bottom: 0; }
-    .rooms .menu-item .rooms-wraper a:hover, .diningarea .menu-item .rooms-wraper a:hover, .rooms_standard .menu-item .rooms-wraper a:hover {
+    padding: 0; }
+    .rooms .menu-item .rooms-wraper a:hover, .rooms .menu-item .dining-wraper a:hover, .diningarea .menu-item .rooms-wraper a:hover, .diningarea .menu-item .dining-wraper a:hover {
       text-decoration: none;
-      background-color: rgba(255, 255, 255, 0.8);
-      text-shadow: white 0 1px 0; }
-  .rooms .menu-item .rooms-wraper p, .diningarea .menu-item .rooms-wraper p, .rooms_standard .menu-item .rooms-wraper p {
+      background-color: rgba(255, 255, 255, 0.8); }
+    .rooms .menu-item .rooms-wraper a .room-lv, .rooms .menu-item .dining-wraper a .room-lv, .diningarea .menu-item .rooms-wraper a .room-lv, .diningarea .menu-item .dining-wraper a .room-lv {
+      border: 1px solid white;
+      display: block;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      font-size: 1.5em;
+      background-color: rgba(0, 0, 0, 0.4);
+      font-family: "Aguafina Script", cursive;
+      padding-top: 35px; }
+      @media (min-width: 480px) {
+        .rooms .menu-item .rooms-wraper a .room-lv, .rooms .menu-item .dining-wraper a .room-lv, .diningarea .menu-item .rooms-wraper a .room-lv, .diningarea .menu-item .dining-wraper a .room-lv {
+          padding-top: 23px;
+          font-size: 1.5em; } }
+      @media (min-width: 960px) {
+        .rooms .menu-item .rooms-wraper a .room-lv, .rooms .menu-item .dining-wraper a .room-lv, .diningarea .menu-item .rooms-wraper a .room-lv, .diningarea .menu-item .dining-wraper a .room-lv {
+          padding-top: 45px;
+          font-size: 2em; } }
+      @media (min-width: 1440px) {
+        .rooms .menu-item .rooms-wraper a .room-lv, .rooms .menu-item .dining-wraper a .room-lv, .diningarea .menu-item .rooms-wraper a .room-lv, .diningarea .menu-item .dining-wraper a .room-lv {
+          padding-top: 55px;
+          font-size: 3em; } }
+      .rooms .menu-item .rooms-wraper a .room-lv:hover, .rooms .menu-item .dining-wraper a .room-lv:hover, .diningarea .menu-item .rooms-wraper a .room-lv:hover, .diningarea .menu-item .dining-wraper a .room-lv:hover {
+        background-color: rgba(0, 0, 0, 0.6); }
+  .rooms .menu-item .rooms-wraper p, .rooms .menu-item .dining-wraper p, .diningarea .menu-item .rooms-wraper p, .diningarea .menu-item .dining-wraper p {
     margin: 0; }
-  .rooms .menu-item .rooms-wraper .detail, .rooms .menu-item .rooms-wraper .level, .diningarea .menu-item .rooms-wraper .detail, .diningarea .menu-item .rooms-wraper .level, .rooms_standard .menu-item .rooms-wraper .detail, .rooms_standard .menu-item .rooms-wraper .level {
+  .rooms .menu-item .rooms-wraper .detail, .rooms .menu-item .rooms-wraper .level, .rooms .menu-item .dining-wraper .detail, .rooms .menu-item .dining-wraper .level, .diningarea .menu-item .rooms-wraper .detail, .diningarea .menu-item .rooms-wraper .level, .diningarea .menu-item .dining-wraper .detail, .diningarea .menu-item .dining-wraper .level {
     display: block;
     height: 44px;
     padding-top: 0.6em; }
-  .rooms .menu-item .rooms-wraper .level, .diningarea .menu-item .rooms-wraper .level, .rooms_standard .menu-item .rooms-wraper .level {
+  .rooms .menu-item .rooms-wraper .level, .rooms .menu-item .dining-wraper .level, .diningarea .menu-item .rooms-wraper .level, .diningarea .menu-item .dining-wraper .level {
     color: #6a6255; }
-  .rooms .menu-item .rooms-wraper .detail, .diningarea .menu-item .rooms-wraper .detail, .rooms_standard .menu-item .rooms-wraper .detail {
+  .rooms .menu-item .rooms-wraper .detail, .rooms .menu-item .dining-wraper .detail, .diningarea .menu-item .rooms-wraper .detail, .diningarea .menu-item .dining-wraper .detail {
     margin-top: 0.5em;
     background-color: #6a6255;
     color: white; }
+.rooms .menu-item .rooms-wraper, .diningarea .menu-item .rooms-wraper {
+  background-color: rgba(0, 0, 0, 0.6); }
+.rooms .menu-item .room-a, .diningarea .menu-item .room-a {
+  text-shadow: 0 2px 0 black; }
+  .rooms .menu-item .room-a:hover, .diningarea .menu-item .room-a:hover {
+    text-shadow: 0 4px 1px black; }
+.rooms .menu-item .dining-a:hover, .diningarea .menu-item .dining-a:hover {
+  text-shadow: white 0 1px 0; }
 
 .rooms_standard .title, .rooms_superior .title, .rooms_delux .title {
   width: 83.33333%;
@@ -3326,3 +3410,9 @@ footer {
 
 .hidden {
   display: none; }
+
+.hidden-mobile {
+  display: none; }
+  @media (min-width: 480px) {
+    .hidden-mobile {
+      display: block; } }
