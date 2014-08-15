@@ -26,7 +26,7 @@ header
     @extend %hidden-mobile
 
   .i18n
-    padding: 0.25em 0 0 0.2em
+    padding: 7px 0 0 0.2em
 
   a
     font-size: $fz-xs
@@ -48,10 +48,12 @@ header
       margin-right: 1em
       margin-top: -0.4em
       &:first-child
-        margin-left: 2.5em
-
-    +breakpoint($b-desktop)
+        margin-left: 1.7em
+    +breakpoint(769px)
       font-size: $fz-l
+      li:first-child
+        margin-left: 6em
+    +breakpoint(1025px)
       li:first-child
         margin-left: 11em
     +breakpoint($b-xlarge)
@@ -60,7 +62,7 @@ header
 
   .pages-logo
     float: left
-    width: 140px
+    width: 160px
     margin-top: -0.5em
     @extend %hidden-mobile
 
