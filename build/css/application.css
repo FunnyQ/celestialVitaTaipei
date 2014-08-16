@@ -2766,7 +2766,8 @@ footer {
   bottom: 0;
   color: #b1b1b1;
   padding: 0 1.2em;
-  z-index: 7; }
+  z-index: 7;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
   @media (min-width: 480px) {
     footer {
       padding: 0.65em 1.2em; } }
